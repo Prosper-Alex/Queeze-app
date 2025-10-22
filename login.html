@@ -1,0 +1,95 @@
+<!DOCTYPE html>
+<html class="dark" lang="en">
+  <head>
+    <meta charset="utf-8" />
+    <meta content="width=device-width, initial-scale=1.0" name="viewport" />
+    <title>Queeze Login</title>
+    <script src="https://cdn.tailwindcss.com?plugins=forms"></script>
+    <link href="https://fonts.googleapis.com" rel="preconnect" />
+    <link crossorigin="" href="https://fonts.gstatic.com" rel="preconnect" />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Spline+Sans:wght@400;500;700&amp;display=swap"
+      rel="stylesheet" />
+    <style>
+      .glassmorphic {
+        background: rgba(255, 255, 255, 0.1);
+        backdrop-filter: blur(10px);
+        -webkit-backdrop-filter: blur(10px);
+        border: 1px solid rgba(255, 255, 255, 0.2);
+      }
+    </style>
+    <style>
+      body {
+        min-height: max(884px, 100dvh);
+      }
+    </style>
+  </head>
+  <body
+    class="bg-background-light dark:bg-background-dark font-display text-white transition-colors duration-500">
+    <div class="relative min-h-screen w-full overflow-hidden">
+      <div class="absolute inset-0 z-0">
+        <div
+          class="absolute bottom-0 left-[-20%] top-[-20%] h-[140%] w-[140%] bg-gradient-to-br from-primary/30 via-transparent to-primary/10"></div>
+        <div
+          class="absolute right-[-20%] top-[20%] h-1/2 w-1/2 rounded-full bg-primary/20 blur-3xl"></div>
+      </div>
+      <div
+        class="relative z-10 flex h-full min-h-screen flex-col items-center justify-center p-4">
+        <div class="w-full max-w-md space-y-8">
+          <div class="text-center">
+            <h1
+              class="font-display text-5xl font-bold text-white drop-shadow-[0_2px_2px_rgba(0,0,0,0.5)]">
+              Queeze
+            </h1>
+            <p class="mt-2 text-white/80">
+              Guess the question from the answer.
+            </p>
+          </div>
+          <div class="glassmorphic rounded-xl p-8 shadow-2xl">
+            <form class="space-y-6">
+              <div>
+                <label class="sr-only" for="email">Email</label>
+                <input
+                  autocomplete="email"
+                  class="form-input w-full rounded-lg border-2 border-primary/50 bg-white/10 p-4 text-white placeholder-white/60 transition duration-300 ease-in-out focus:border-primary focus:outline-none focus:ring-2 focus:ring-primary/50"
+                  id="email"
+                  name="email"
+                  placeholder="Email"
+                  required=""
+                  type="email" />
+              </div>
+              <div>
+                <label class="sr-only" for="password">Password</label>
+                <input
+                  autocomplete="current-password"
+                  class="form-input w-full rounded-lg border-2 border-primary/50 bg-white/10 p-4 text-white placeholder-white/60 transition duration-300 ease-in-out focus:border-primary focus:outline-none focus:ring-2 focus:ring-primary/50"
+                  id="password"
+                  name="password"
+                  placeholder="Password"
+                  required=""
+                  type="password" />
+              </div>
+              <div>
+                <button
+                  class="w-full rounded-lg bg-primary py-3 font-bold text-white shadow-lg shadow-primary/30 transition duration-300 ease-in-out hover:bg-primary/90 focus:outline-none focus:ring-2 focus:ring-primary focus:ring-offset-2 focus:ring-offset-background-dark"
+                  type="submit">
+                  Log In
+                </button>
+              </div>
+            </form>
+            <div class="mt-6 text-center">
+              <a
+                class="text-sm text-white/80 transition duration-300 ease-in-out hover:text-white"
+                href="#">
+                Don't have an account?
+                <span class="font-bold text-primary">Sign Up</span>
+              </a>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+
+    <script src="./js/script.js"></script>
+  </body>
+</html>

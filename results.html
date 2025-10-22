@@ -1,0 +1,187 @@
+<!DOCTYPE html>
+<html class="dark" lang="en">
+  <head>
+    <meta charset="utf-8" />
+    <meta content="width=device-width, initial-scale=1.0" name="viewport" />
+    <title>Quiz Results</title>
+    <script src="https://cdn.tailwindcss.com?plugins=forms,container-queries"></script>
+    <link href="https://fonts.googleapis.com" rel="preconnect" />
+    <link crossorigin="" href="https://fonts.gstatic.com" rel="preconnect" />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Spline+Sans:wght@400;500;700&amp;display=swap"
+      rel="stylesheet" />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined"
+      rel="stylesheet" />
+    <script>
+      tailwind.config = {
+        darkMode: "class",
+        theme: {
+          extend: {
+            colors: {
+              primary: "#165b9c",
+              "background-light": "#f6f7f8",
+              "background-dark": "#111921",
+            },
+            fontFamily: {
+              display: ["Spline Sans"],
+            },
+            borderRadius: {
+              DEFAULT: "0.5rem",
+              lg: "1rem",
+              xl: "1.5rem",
+              full: "9999px",
+            },
+          },
+        },
+      };
+    </script>
+    <style>
+      .material-symbols-outlined {
+        font-variation-settings: "FILL" 0, "wght" 400, "GRAD" 0, "opsz" 24;
+      }
+    </style>
+    <style>
+      body {
+        min-height: max(884px, 100dvh);
+      }
+    </style>
+  </head>
+  <body
+    class="bg-background-light dark:bg-background-dark font-display text-slate-800 dark:text-slate-200">
+    <div class="flex flex-col min-h-screen">
+      <header
+        class="sticky top-0 z-10 bg-background-light/80 dark:bg-background-dark/80 backdrop-blur-sm">
+        <div class="flex items-center justify-between p-4">
+          <button
+            class="p-2 rounded-full text-slate-600 dark:text-slate-400 hover:bg-slate-200 dark:hover:bg-slate-800">
+            <span class="material-symbols-outlined">close</span>
+          </button>
+          <h1 class="text-lg font-bold text-slate-900 dark:text-white">
+            Quiz Results
+          </h1>
+          <div class="w-10"></div>
+        </div>
+      </header>
+      <main class="flex-grow px-4 pb-24">
+        <div class="text-center pt-8 pb-6">
+          <h2 class="text-4xl font-bold text-slate-900 dark:text-white">
+            Great job, Sophia!
+          </h2>
+          <p class="mt-2 text-slate-600 dark:text-slate-400">
+            You're doing great! Keep up the fantastic work.
+          </p>
+        </div>
+        <div class="p-6 mb-8 bg-white dark:bg-slate-900 rounded-xl shadow-md">
+          <div class="flex items-center justify-between mb-3">
+            <p class="font-medium text-slate-700 dark:text-slate-300">Score</p>
+            <p class="font-bold text-primary">8/10</p>
+          </div>
+          <div class="w-full bg-slate-200 dark:bg-slate-700 rounded-full h-2.5">
+            <div
+              class="bg-gradient-to-r from-green-400 to-primary h-2.5 rounded-full"
+              style="width: 80%"></div>
+          </div>
+        </div>
+        <h3 class="text-xl font-bold mb-4 text-slate-900 dark:text-white">
+          Review Answers
+        </h3>
+        <div class="space-y-3">
+          <div
+            class="flex items-center p-4 bg-white dark:bg-slate-900 rounded-lg shadow-sm">
+            <div class="flex-grow">
+              <p class="font-medium text-slate-800 dark:text-slate-200">
+                Question 1: What is 2+2?
+              </p>
+              <p class="text-sm text-green-500">Correct</p>
+            </div>
+            <div class="flex-shrink-0">
+              <div
+                class="w-8 h-8 flex items-center justify-center bg-green-100 dark:bg-green-900/50 rounded-full">
+                <span
+                  class="material-symbols-outlined text-green-600 dark:text-green-400"
+                  >check</span
+                >
+              </div>
+            </div>
+          </div>
+          <div
+            class="flex items-center p-4 bg-white dark:bg-slate-900 rounded-lg shadow-sm">
+            <div class="flex-grow">
+              <p class="font-medium text-slate-800 dark:text-slate-200">
+                Question 2: What is 5x5?
+              </p>
+              <p class="text-sm text-red-500">Incorrect</p>
+            </div>
+            <div class="flex-shrink-0">
+              <div
+                class="w-8 h-8 flex items-center justify-center bg-red-100 dark:bg-red-900/50 rounded-full">
+                <span
+                  class="material-symbols-outlined text-red-600 dark:text-red-400"
+                  >close</span
+                >
+              </div>
+            </div>
+          </div>
+          <div
+            class="flex items-center p-4 bg-white dark:bg-slate-900 rounded-lg shadow-sm">
+            <div class="flex-grow">
+              <p class="font-medium text-slate-800 dark:text-slate-200">
+                Question 3: What is 10-3?
+              </p>
+              <p class="text-sm text-green-500">Correct</p>
+            </div>
+            <div class="flex-shrink-0">
+              <div
+                class="w-8 h-8 flex items-center justify-center bg-green-100 dark:bg-green-900/50 rounded-full">
+                <span
+                  class="material-symbols-outlined text-green-600 dark:text-green-400"
+                  >check</span
+                >
+              </div>
+            </div>
+          </div>
+        </div>
+      </main>
+      <footer
+        class="fixed bottom-0 left-0 right-0 border-t bg-background-light dark:bg-background-dark border-slate-200 dark:border-slate-800">
+        <div class="flex justify-around items-center px-4 py-3 sm:px-6">
+          <button
+            class="flex-1 text-center py-2 px-4 rounded-full bg-primary/10 dark:bg-primary/20 text-primary font-bold">
+            Review
+          </button>
+          <div class="w-4"></div>
+          <button
+            class="flex-1 text-center py-2 px-4 rounded-full bg-primary text-white font-bold">
+            Retake Quiz
+          </button>
+        </div>
+        <nav
+          class="flex justify-around py-3 border-t border-slate-200 dark:border-slate-800">
+          <a
+            class="flex flex-col items-center gap-1 text-slate-500 dark:text-slate-400"
+            href="#">
+            <span class="material-symbols-outlined">home</span>
+            <span class="text-xs">Home</span>
+          </a>
+          <a class="flex flex-col items-center gap-1 text-primary" href="#">
+            <span class="material-symbols-outlined">quiz</span>
+            <span class="text-xs font-bold">Quizzes</span>
+          </a>
+          <a
+            class="flex flex-col items-center gap-1 text-slate-500 dark:text-slate-400"
+            href="#">
+            <span class="material-symbols-outlined">bar_chart</span>
+            <span class="text-xs">Progress</span>
+          </a>
+          <a
+            class="flex flex-col items-center gap-1 text-slate-500 dark:text-slate-400"
+            href="#">
+            <span class="material-symbols-outlined">settings</span>
+            <span class="text-xs">Settings</span>
+          </a>
+        </nav>
+      </footer>
+    </div>
+  </body>
+</html>

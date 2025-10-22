@@ -1,0 +1,266 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="utf-8" />
+    <link crossorigin="" href="https://fonts.gstatic.com/" rel="preconnect" />
+    <link
+      as="style"
+      href="https://fonts.googleapis.com/css2?display=swap&amp;family=Lexend%3Awght%40400%3B500%3B700%3B900&amp;family=Noto+Sans%3Awght%40400%3B500%3B700%3B900"
+      onload="this.rel='stylesheet'"
+      rel="stylesheet" />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined"
+      rel="stylesheet" />
+    <title>Stitch Design</title>
+    <link href="data:image/x-icon;base64," rel="icon" type="image/x-icon" />
+    <script src="https://cdn.tailwindcss.com?plugins=forms,container-queries"></script>
+    <script id="tailwind-config">
+      tailwind.config = {
+        darkMode: "class",
+        theme: {
+          extend: {
+            colors: {
+              primary: "#0d83f2",
+              "background-light": "#f5f7f8",
+              "background-dark": "#101922",
+            },
+            fontFamily: {
+              display: ["Lexend"],
+            },
+            borderRadius: {
+              DEFAULT: "0.5rem",
+              lg: "1rem",
+              xl: "1.5rem",
+              full: "9999px",
+            },
+          },
+        },
+      };
+    </script>
+    <style>
+      body {
+        min-height: max(884px, 100dvh);
+      }
+    </style>
+  </head>
+  <body
+    class="bg-background-light dark:bg-background-dark font-display text-slate-800 dark:text-slate-200">
+    <div
+      class="relative flex h-auto min-h-screen w-full flex-col justify-between overflow-x-hidden">
+      <div class="flex-grow">
+        <header class="flex items-center p-4">
+          <button
+            class="flex h-10 w-10 items-center justify-center rounded-full text-slate-800 dark:text-slate-200">
+            <span class="material-symbols-outlined"> arrow_back </span>
+          </button>
+          <h1
+            class="flex-1 text-center text-xl font-bold tracking-tight text-slate-900 dark:text-white">
+            Settings
+          </h1>
+          <div class="h-10 w-10"></div>
+        </header>
+        <div class="p-4">
+          <div class="flex flex-col items-center gap-4 text-center">
+            <div
+              class="h-32 w-32 rounded-full bg-cover bg-center"
+              style="
+                background-image: url('https://lh3.googleusercontent.com/aida-public/AB6AXuCOfaaNmuIWR-9joVUnIKm3kj4241WsLJSOsIZt1oXzVOoBjqfJMYytjUj_DnHNdb3kom-XZfR_BO_OYuUbclMfRNc-QGm1nCuQMmTSkzvhryHMqxeIZfKsr1b6zkhibAEoxnojuPrhMemm87VWd4ePLj1vTY937U9y2QtKLQ_YgtLU2KKm0akd-P2l4Tma0DjKx5wNwn2eYA-C8nOORR1uD7rEgmDUxQ0O2ZbcZQw59xOCSXBPyPtPLxISOY8ASnSTzKNspG0ZH3c');
+              "></div>
+            <div>
+              <p class="text-2xl font-bold text-slate-900 dark:text-white">
+                Ethan Carter
+              </p>
+              <p class="text-base text-slate-500 dark:text-slate-400">
+                Grade 7
+              </p>
+              <p class="text-sm text-slate-400 dark:text-slate-500">
+                Joined 2022
+              </p>
+            </div>
+          </div>
+        </div>
+        <div class="space-y-6 px-4">
+          <div class="space-y-2">
+            <h2 class="text-base font-bold text-slate-900 dark:text-white">
+              Account
+            </h2>
+            <div
+              class="divide-y divide-slate-200/50 rounded-lg bg-white dark:divide-slate-700/50 dark:bg-slate-900/50">
+              <a class="flex items-center gap-4 p-4" href="#">
+                <div
+                  class="flex h-12 w-12 shrink-0 items-center justify-center rounded-lg bg-primary/10 text-primary">
+                  <span class="material-symbols-outlined"> person </span>
+                </div>
+                <div class="flex-1">
+                  <p class="font-medium text-slate-800 dark:text-slate-200">
+                    Profile
+                  </p>
+                  <p class="text-sm text-slate-500 dark:text-slate-400">
+                    Update your profile information
+                  </p>
+                </div>
+                <span
+                  class="material-symbols-outlined text-slate-400 dark:text-slate-500">
+                  chevron_right
+                </span>
+              </a>
+              <a class="flex items-center gap-4 p-4" href="#">
+                <div
+                  class="flex h-12 w-12 shrink-0 items-center justify-center rounded-lg bg-primary/10 text-primary">
+                  <span class="material-symbols-outlined"> star </span>
+                </div>
+                <div class="flex-1">
+                  <p class="font-medium text-slate-800 dark:text-slate-200">
+                    Subscription
+                  </p>
+                  <p class="text-sm text-slate-500 dark:text-slate-400">
+                    Manage your subscription
+                  </p>
+                </div>
+                <span
+                  class="material-symbols-outlined text-slate-400 dark:text-slate-500">
+                  chevron_right
+                </span>
+              </a>
+              <a class="flex items-center gap-4 p-4" href="#">
+                <div
+                  class="flex h-12 w-12 shrink-0 items-center justify-center rounded-lg bg-primary/10 text-primary">
+                  <span class="material-symbols-outlined"> lock </span>
+                </div>
+                <div class="flex-1">
+                  <p class="font-medium text-slate-800 dark:text-slate-200">
+                    Password
+                  </p>
+                  <p class="text-sm text-slate-500 dark:text-slate-400">
+                    Change your password
+                  </p>
+                </div>
+                <span
+                  class="material-symbols-outlined text-slate-400 dark:text-slate-500">
+                  chevron_right
+                </span>
+              </a>
+            </div>
+          </div>
+          <div class="space-y-2">
+            <h2 class="text-base font-bold text-slate-900 dark:text-white">
+              Preferences
+            </h2>
+            <div
+              class="divide-y divide-slate-200/50 rounded-lg bg-white dark:divide-slate-700/50 dark:bg-slate-900/50">
+              <a class="flex items-center gap-4 p-4" href="#">
+                <div
+                  class="flex h-12 w-12 shrink-0 items-center justify-center rounded-lg bg-primary/10 text-primary">
+                  <span class="material-symbols-outlined"> notifications </span>
+                </div>
+                <div class="flex-1">
+                  <p class="font-medium text-slate-800 dark:text-slate-200">
+                    Notifications
+                  </p>
+                  <p class="text-sm text-slate-500 dark:text-slate-400">
+                    Enable or disable notifications
+                  </p>
+                </div>
+                <span
+                  class="material-symbols-outlined text-slate-400 dark:text-slate-500">
+                  chevron_right
+                </span>
+              </a>
+              <a class="flex items-center gap-4 p-4" href="#">
+                <div
+                  class="flex h-12 w-12 shrink-0 items-center justify-center rounded-lg bg-primary/10 text-primary">
+                  <span class="material-symbols-outlined"> volume_up </span>
+                </div>
+                <div class="flex-1">
+                  <p class="font-medium text-slate-800 dark:text-slate-200">
+                    Sound
+                  </p>
+                  <p class="text-sm text-slate-500 dark:text-slate-400">
+                    Adjust sound settings
+                  </p>
+                </div>
+                <span
+                  class="material-symbols-outlined text-slate-400 dark:text-slate-500">
+                  chevron_right
+                </span>
+              </a>
+            </div>
+          </div>
+          <div class="space-y-2">
+            <h2 class="text-base font-bold text-slate-900 dark:text-white">
+              Support
+            </h2>
+            <div
+              class="divide-y divide-slate-200/50 rounded-lg bg-white dark:divide-slate-700/50 dark:bg-slate-900/50">
+              <a class="flex items-center gap-4 p-4" href="#">
+                <div
+                  class="flex h-12 w-12 shrink-0 items-center justify-center rounded-lg bg-primary/10 text-primary">
+                  <span class="material-symbols-outlined"> help </span>
+                </div>
+                <div class="flex-1">
+                  <p class="font-medium text-slate-800 dark:text-slate-200">
+                    Help
+                  </p>
+                  <p class="text-sm text-slate-500 dark:text-slate-400">
+                    Get help and support
+                  </p>
+                </div>
+                <span
+                  class="material-symbols-outlined text-slate-400 dark:text-slate-500">
+                  chevron_right
+                </span>
+              </a>
+              <a class="flex items-center gap-4 p-4" href="#">
+                <div
+                  class="flex h-12 w-12 shrink-0 items-center justify-center rounded-lg bg-primary/10 text-primary">
+                  <span class="material-symbols-outlined"> shield </span>
+                </div>
+                <div class="flex-1">
+                  <p class="font-medium text-slate-800 dark:text-slate-200">
+                    Privacy Policy
+                  </p>
+                  <p class="text-sm text-slate-500 dark:text-slate-400">
+                    View our privacy policy
+                  </p>
+                </div>
+                <span
+                  class="material-symbols-outlined text-slate-400 dark:text-slate-500">
+                  chevron_right
+                </span>
+              </a>
+            </div>
+          </div>
+        </div>
+      </div>
+      <footer
+        class="sticky bottom-0 border-t border-slate-200/80 bg-white/80 pb-3 pt-2 backdrop-blur-sm dark:border-slate-800/80 dark:bg-slate-900/80">
+        <nav class="flex justify-around">
+          <a
+            class="flex flex-col items-center gap-1 text-slate-500 dark:text-slate-400"
+            href="home.html">
+            <span class="material-symbols-outlined"> home </span>
+            <span class="text-xs font-medium">Home</span>
+          </a>
+          <a
+            class="flex flex-col items-center gap-1 text-slate-500 dark:text-slate-400"
+            href="selection.html">
+            <span class="material-symbols-outlined"> checklist </span>
+            <span class="text-xs font-medium">Quizzes</span>
+          </a>
+          <a
+            class="flex flex-col items-center gap-1 text-slate-500 dark:text-slate-400"
+            href="results.html">
+            <span class="material-symbols-outlined"> leaderboard </span>
+            <span class="text-xs font-medium">Progress</span>
+          </a>
+          <a
+            class="flex flex-col items-center gap-1 text-primary"
+            href="settings.html">
+            <span class="material-symbols-outlined"> settings </span>
+            <span class="text-xs font-medium">Settings</span>
+          </a>
+        </nav>
+      </footer>
+    </div>
+  </body>
+</html>
