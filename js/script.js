@@ -1,3 +1,5 @@
+// Login style
+
 tailwind.config = {
   darkMode: "class",
   theme: {
